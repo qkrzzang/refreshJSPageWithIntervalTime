@@ -33,8 +33,8 @@ function changeRefreshTime(e) {
 }
 
 function waitFunction() {
-  clearInterval(intervalId);
-  //console.log('intervalTime = ' + intervalTime);
-  makeInterval(intervalTime);
+  clearInterval(intervalId); // 기존 interval 종료
+  console.log("interval = " + intervalTime);
+  makeInterval(intervalTime); // 새로운 interval 시작
 }
 </code></pre>
